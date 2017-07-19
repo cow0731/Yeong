@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="egovframework.example.eju2.service.impl.Eju2Mapper">
+	
+	<!-- 메인 조회 -->
+	<select id="selectWelcomeWebServiceList" resultType="egovMap">
+		SELECT ID,
+    		USER_NAME,
+    		AGE,
+    		COUNTRY,
+    		ETC
+		FROM welcome_web
+	</select>
+	
+</mapper>
